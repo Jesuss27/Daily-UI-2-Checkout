@@ -3,3 +3,165 @@
     margin:0;
     box-sizing:border-box;
 }
+:root{
+    --p-font:1vw;
+    --main-blue:#6C63FF;
+    --p-color:#202A48;
+    font-family:"Poppins", sans-serif;
+}
+.container{
+    padding:2em 2em;
+    height:100vh;
+    display:flex;
+}
+.status-bar{
+    display:none;
+}
+.col-1{
+    width:50%;
+    height:100%;
+}
+.payment{
+    min-height:600px;
+    min-width:300px;
+    height:100%;
+    width: 75%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+h2{
+    font-size:2vw;
+}
+h3{
+    font-size:1.5vw;
+}
+p{
+    font-size:1vw;
+}
+.input-radio{
+    display:flex;
+    width:50%;
+    justify-content: space-between;
+}
+.input-wrapper{
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    width:50%;
+}
+.input-card-info{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height:200px;
+}
+input[type=text]{
+    font-size:1.3vw;
+    height: 40px;
+    border:none;
+    border-bottom:2px solid #707070;
+    outline:none;
+}
+
+.cvv-code{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.buttons{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    font-size:1.3vw;
+}
+.back-btn{
+    padding:1em 2em;
+    width:30%;
+    border: 2px solid var(--main-blue);
+    color:var(--main-blue);
+    background:white;
+}
+.pay-btn{
+    padding:2em 2em;
+    width:60%;
+    color:white;
+    background-color: var(--main-blue);
+    border:none;
+    
+}
+.col-2{
+    display:flex;
+    width:50%;
+    justify-content: flex-end;
+    position:relative;
+}
+.info{
+    width:75%;
+    background-color: #E2E1FF;
+    padding-top:2em;
+    padding-left:1em;
+    display:grid;
+    grid-template-rows: 1fr 5fr;
+    
+}
+
+.sub-row-1{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sub-row-2{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: right;
+}
+.box{
+    display:flex;
+    justify-content: right;
+    width:75%;
+    height:100%;
+    border-left: 2px solid white;
+    padding-top:50%;
+    border-top:2px solid white;
+}
+
+.svg-container{
+    position:absolute;
+
+    width:34.578vw;
+    height:25vw;
+    bottom:0px;
+    left:-100px;
+}
+svg{
+    width:100%;
+    height:100%;
+}
+.visa-svg{
+    width:64.282px;
+    height:50px;
+}
+.paypal-svg{
+    width:33.76px;
+    height:39.88px;
+}
+
+input[type=checkbox]{
+    width:1.3em;
+    height:1.3em;
+    border-radius:20px;
+    outline:none;
+    cursor:pointer;
+}
+input[type=checkbox]:checked{
+    background:var(--main-blue)
+}
+
+
+
+
+
+
