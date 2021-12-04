@@ -45,7 +45,7 @@ body{
 }
 .payment{
     min-height:600px;
-    min-width:300px;
+    min-width:350px;
     height:100%;
     width: 75%;
     display:flex;
@@ -82,7 +82,7 @@ p{
     min-height:200px;
 }
 input[type=text]{
-    font-size:1.3vw;
+    font-size:1.54vw;
     height: 40px;
     border:none;
     border-bottom:2px solid #707070;
@@ -93,6 +93,9 @@ input[type=text]{
     width:100%;
     display:flex;
     justify-content: space-between;
+}
+.payment-detail-type-2{
+    width:45%;
 }
 .buttons{
     width:100%;
@@ -249,7 +252,72 @@ input[type=checkbox]:checked{
 }
 
 
-
+@media screen and (max-width:940px){
+    .svg-container{
+        display:none;
+    }
+    .payment{
+        width:100%;
+    }
+    .input-radio{
+        width:100%;
+    }
+    p{
+        font-size:14px;
+    }
+    input[type=text]{
+        font-size:16px;
+    }
+    .payment-detail-type-2{
+        width:45%;
+    }
+    h1{
+        font-size:8vw;
+    }
+}
+@media screen and (max-width:685px){
+    .container{
+        height:auto;
+        flex-direction: column-reverse;
+    }
+    .col-2{
+        width:100%;
+        height:200px;
+        overflow:hidden;
+    }
+    .info{
+        width:100%;
+        grid-template-rows: 1fr;
+    }
+    h3{
+        font-size:16px;
+    }
+    h2{
+        font-size:14px;
+    }
+    .col-1{
+        width:100%;
+    }
+ 
+}
+@media screen and (max-width:376px){
+    .payment{
+        min-width:275px;
+    }
+    .col-2{
+        height:150px;
+    }
+ 
+}
+@media screen and (max-width:376px){
+    .payment{
+        min-width:50px;
+    }
+    .col-2{
+        height:150px;
+    }
+ 
+}
 
 
 
